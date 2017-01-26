@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="bad_token_1_stack_trace"><![CDATA[01-26 15:32:57.515 26856-26856/com.brandingbrand.tommcfarlin.test E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                                    Process: com.brandingbrand.tommcfarlin.test, PID: 26856
+                                                                                    com.afollestad.materialdialogs.MaterialDialog$DialogException: Bad window token, you cannot show a dialog before an Activity is created or after it\'s hidden.
+                                                                                        at com.afollestad.materialdialogs.MaterialDialog.show(MaterialDialog.java:1440)
+                                                                                        at com.afollestad.materialdialogs.MaterialDialog$Builder.show(MaterialDialog.java:1429)
+                                                                                        at com.brandingbrand.tommcfarlin.test.BadToken2$1$1.run(BadToken2.java:32)
+                                                                                        at android.os.Handler.handleCallback(Handler.java:751)
+                                                                                        at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                                        at android.os.Looper.loop(Looper.java:154)
+                                                                                        at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                        at java.lang.reflect.Method.invoke(Native Method)
+                                                                                        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+                                                                                        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)]]></string>
+    <string name="window_leak_1_stack_trace"><![CDATA[01-26 15:32:33.848 26856-26856/com.brandingbrand.tommcfarlin.test E/WindowManager: android.view.WindowLeaked: Activity com.brandingbrand.tommcfarlin.test.WindowLeak1 has leaked window DecorView@fa42e0b[] that was originally added here
+                                                                                       at android.view.ViewRootImpl.<init>(ViewRootImpl.java:417)
+                                                                                       at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:331)
+                                                                                       at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+                                                                                       at android.app.Dialog.show(Dialog.java:316)
+                                                                                       at com.afollestad.materialdialogs.MaterialDialog.show(MaterialDialog.java:1438)
+                                                                                       at com.afollestad.materialdialogs.MaterialDialog$Builder.show(MaterialDialog.java:1429)
+                                                                                       at com.brandingbrand.tommcfarlin.test.WindowLeak1$1.onClick(WindowLeak1.java:25)
+                                                                                       at android.view.View.performClick(View.java:5610)
+                                                                                       at android.view.View$PerformClick.run(View.java:22265)
+                                                                                       at android.os.Handler.handleCallback(Handler.java:751)
+                                                                                       at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                                       at android.os.Looper.loop(Looper.java:154)
+                                                                                       at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                       at java.lang.reflect.Method.invoke(Native Method)
+                                                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+                                                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)]]></string>
+    <string name="window_leak_2_stack_trace"><![CDATA[01-26 15:32:01.300 26856-26856/com.brandingbrand.tommcfarlin.test E/WindowManager: android.view.WindowLeaked: Activity com.brandingbrand.tommcfarlin.test.BadToken1 has leaked window DecorView@5d3b2ed[] that was originally added here
+                                                                                       at android.view.ViewRootImpl.<init>(ViewRootImpl.java:417)
+                                                                                       at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:331)
+                                                                                       at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+                                                                                       at android.app.Dialog.show(Dialog.java:316)
+                                                                                       at com.afollestad.materialdialogs.MaterialDialog.show(MaterialDialog.java:1438)
+                                                                                       at com.afollestad.materialdialogs.MaterialDialog$Builder.show(MaterialDialog.java:1429)
+                                                                                       at com.brandingbrand.tommcfarlin.test.BadToken1.onPause(BadToken1.java:36)
+                                                                                       at android.app.Activity.performPause(Activity.java:6802)
+                                                                                       at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1322)
+                                                                                       at android.app.ActivityThread.performPauseActivityIfNeeded(ActivityThread.java:3711)
+                                                                                       at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3688)
+                                                                                       at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3662)
+                                                                                       at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3636)
+                                                                                       at android.app.ActivityThread.-wrap16(ActivityThread.java)
+                                                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1481)
+                                                                                       at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                                       at android.os.Looper.loop(Looper.java:154)
+                                                                                       at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                       at java.lang.reflect.Method.invoke(Native Method)
+                                                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+                                                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)]]></string>
+</resources>

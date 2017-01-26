@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bad_token_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bad token exception: show dialog when activity has been destroyed"/>
+
+        <TextView
+            android:id="@+id/bad_token_1_stack_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/window_leak_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Window leak exception: fail to dismiss dialog before finishing activity. Does not crash app."/>
+
+        <TextView
+            android:id="@+id/window_leak_1_stack_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/window_leak_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Window Leak exception: show dialog while finishing"/>
+
+        <TextView
+            android:id="@+id/window_leak_2_stack_trace"
+            android:layout_width="wrap_content"
+
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+</ScrollView>
