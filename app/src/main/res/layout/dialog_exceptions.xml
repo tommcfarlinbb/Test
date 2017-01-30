@@ -45,5 +45,17 @@
 
             android:layout_height="100dp"/>
 
+        <Button
+            android:id="@+id/window_leak_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="No Leak Scenario: show dialog after starting an activity"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/window_leak_3_stack_trace"-->
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="100dp"/>-->
     </LinearLayout>
 </ScrollView>

@@ -20,6 +20,7 @@ public class DialogExceptions extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.bad_token_1).setOnClickListener(this);
         findViewById(R.id.window_leak_1).setOnClickListener(this);
         findViewById(R.id.window_leak_2).setOnClickListener(this);
+        findViewById(R.id.window_leak_3).setOnClickListener(this);
 
         setTextHtml((TextView) findViewById(R.id.bad_token_1_stack_trace), getString(R.string.bad_token_1_stack_trace));
         setTextHtml((TextView) findViewById(R.id.window_leak_1_stack_trace), getString(R.string.window_leak_1_stack_trace));
@@ -37,6 +38,9 @@ public class DialogExceptions extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.window_leak_2:
                 startActivity(new Intent(this, WindowLeak2.class));
+                break;
+            case R.id.window_leak_3:
+                startActivity(new Intent(this, NoLeakScenario1.class));
                 break;
         }
     }

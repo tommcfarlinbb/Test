@@ -1,5 +1,6 @@
 package com.brandingbrand.tommcfarlin.test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -9,36 +10,40 @@ import android.view.View;
 import com.afollestad.materialdialogs.MaterialDialog;
 
 /**
- * Bad token exception: show dialog when activity has been destroyed
+ * Bad token exception: show dialog while finishing
  */
-public class BadToken1 extends AppCompatActivity {
+public class NoLeakScenario1 extends AppCompatActivity {
+
+    MaterialDialog md;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bad_token_1);
+        setContentView(R.layout.no_leak_scenario_1);
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(NoLeakScenario1.this, BlankActivity.class));
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        new MaterialDialog.Builder(BadToken1.this)
-                                .content("Dialog")
-                                .progress(true, 0)
-                                .cancelable(false)
-                                .show();
+                        md.show();
                     }
-                }, 2000);
+                }, 1000);
             }
         });
 
-        new MaterialDialog.Builder(BadToken1.this)
+        md = new MaterialDialog.Builder(this)
                 .content("Dialog")
                 .progress(true, 0)
                 .cancelable(false)
-                .show();
+                .build();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        md.show();
     }
 }

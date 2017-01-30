@@ -19,6 +19,8 @@
         <activity android:name=".BadToken1" android:label="Bad Token Exception" />
         <activity android:name=".WindowLeak1" android:label="Window Leak Exception 1"/>
         <activity android:name=".WindowLeak2" android:label="Window Leak Exception 2"/>
+        <activity android:name=".NoLeakScenario1" android:label="Window Leak Exception 3"/>
+        <activity android:name=".BlankActivity" android:label="Blank Activity"/>
     </application>
 
 </manifest>
