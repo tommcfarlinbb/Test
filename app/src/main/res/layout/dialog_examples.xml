@@ -10,22 +10,16 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/dialog_exceptions"
+            android:id="@+id/alert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dialog Exceptions"/>
+            android:text="Alert"/>
 
         <Button
-            android:id="@+id/dialog_examples"
+            android:id="@+id/material"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dialog Examples"/>
-
-        <Button
-            android:id="@+id/android_units_demo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android Units Demo"/>
-
+            android:layout_marginTop="50dp"
+            android:text="Material"/>
     </LinearLayout>
 </ScrollView>

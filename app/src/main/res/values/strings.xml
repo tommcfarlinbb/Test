@@ -1,4 +1,14 @@
 <resources>
+    <string name="title">Title</string>
+    <string name="message">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</string>
+    <string name="dismiss">Dismiss</string>
+
+    <string-array name="dimensions">
+        <item>px</item>
+        <item>dp</item>
+        <item>sp</item>
+    </string-array>
+
     <string name="app_name">Test</string>
     <string name="bad_token_1_stack_trace"><![CDATA[01-26 15:32:57.515 26856-26856/com.brandingbrand.tommcfarlin.test E/AndroidRuntime: FATAL EXCEPTION: main
                                                                                     Process: com.brandingbrand.tommcfarlin.test, PID: 26856

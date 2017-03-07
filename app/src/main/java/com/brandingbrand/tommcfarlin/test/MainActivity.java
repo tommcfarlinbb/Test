@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.main_activity);
 
         findViewById(R.id.dialog_exceptions).setOnClickListener(this);
+        findViewById(R.id.dialog_examples).setOnClickListener(this);
+        findViewById(R.id.android_units_demo).setOnClickListener(this);
     }
 
     @Override
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.dialog_exceptions:
                 startActivity(new Intent(this, DialogExceptions.class));
+            case R.id.dialog_examples:
+                startActivity(new Intent(this, DialogExamples.class));
+            case R.id.android_units_demo:
+                startActivity(new Intent(this, AndroidUnitsDemo.class));
         }
     }
 
