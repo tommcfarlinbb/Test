@@ -15,14 +15,45 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".DialogExceptions" android:label="Dialog Exceptions" />
-        <activity android:name=".BadToken1" android:label="Bad Token Exception" />
-        <activity android:name=".WindowLeak1" android:label="Window Leak Exception 1"/>
-        <activity android:name=".WindowLeak2" android:label="Window Leak Exception 2"/>
-        <activity android:name=".NoLeakScenario1" android:label="Window Leak Exception 3"/>
-        <activity android:name=".BlankActivity" android:label="Blank Activity"/>
-        <activity android:name=".DialogExamples" android:label="Blank Activity"/>
-        <activity android:name=".AndroidUnitsDemo" android:label="Android Units Demo" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DialogExceptions"
+            android:label="Dialog Exceptions"/>
+        <activity
+            android:name=".BadToken1"
+            android:label="Bad Token Exception"/>
+        <activity
+            android:name=".WindowLeak1"
+            android:label="Window Leak Exception 1"/>
+        <activity
+            android:name=".WindowLeak2"
+            android:label="Window Leak Exception 2"/>
+        <activity
+            android:name=".NoLeakScenario1"
+            android:label="Window Leak Exception 3"/>
+        <activity
+            android:name=".BlankActivity"
+            android:label="Blank Activity"/>
+        <activity
+            android:name=".DialogExamples"
+            android:label="Blank Activity"/>
+        <activity
+            android:name=".AndroidUnitsDemo"
+            android:label="Android Units Demo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ButtonElevationIntersection"
+            android:label="Android Units Demo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AlarmManagerTests"
+            android:label="Alarm Manager Tests"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".NotificationBroadcastReceiver">
+        </receiver>
+
+        <activity android:name=".NotificationTests">
+        </activity>
     </application>
 
 </manifest>

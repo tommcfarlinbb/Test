@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.dialog_exceptions).setOnClickListener(this);
         findViewById(R.id.dialog_examples).setOnClickListener(this);
         findViewById(R.id.android_units_demo).setOnClickListener(this);
+        findViewById(R.id.button_elevation_intersection).setOnClickListener(this);
+        findViewById(R.id.alarm_manager_test).setOnClickListener(this);
+        findViewById(R.id.notification_test).setOnClickListener(this);
     }
 
     @Override
@@ -29,10 +32,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.dialog_exceptions:
                 startActivity(new Intent(this, DialogExceptions.class));
+                break;
             case R.id.dialog_examples:
                 startActivity(new Intent(this, DialogExamples.class));
+                break;
             case R.id.android_units_demo:
                 startActivity(new Intent(this, AndroidUnitsDemo.class));
+                break;
+            case R.id.button_elevation_intersection:
+                startActivity(new Intent(this, ButtonElevationIntersection.class));
+                break;
+            case R.id.alarm_manager_test:
+                startActivity(new Intent(this, AlarmManagerTests.class));
+                break;
+            case R.id.notification_test:
+                startActivity(new Intent(this, NotificationTests.class));
+                break;
         }
     }
 
